@@ -16,6 +16,11 @@ footer {
 	margin-bottom:1em;
 }
 
+.gallery {
+	margin: 1em 1em 0em 1em;
+	background-color: #A7a7a7;
+}
+
 .panel-default {
 	padding: 10px;
 }
@@ -31,4 +36,12 @@ footer {
 
 .nav-pills>li.active>a:hover{
 	background-color: #B478CE;
+}
+
+.thumbnail {
+	margin-right: 0.5em;
+}
+
+video {
+	vertical-align: middle;
 }
