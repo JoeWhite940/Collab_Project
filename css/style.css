@@ -16,6 +16,10 @@ footer {
 	margin-bottom:1em;
 }
 
+.container {
+	margin-top: 1em;
+}
+
 .gallery {
 	margin: 1em 1em 0em 1em;
 	background-color: #A7a7a7;
@@ -40,8 +44,6 @@ footer {
 
 .thumbnail {
 	margin-right: 0.5em;
+	height:100%;
 }
 
-video {
-	vertical-align: middle;
-}
