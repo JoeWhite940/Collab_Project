@@ -15,6 +15,9 @@
     </style>
 
     <script src="js/respond.js"></script>
+
+</script>
+
 </head>
 
 <body>
@@ -49,9 +52,11 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-sm-8">
-			<div class="panel panel-default">
-			<div class="panel-heading"><h1 class="panel-title">Sample Video</h1></div>
+
+		<div class="tab-content col-sm-8">
+
+			<div class="panel panel-default tab-pane fade active in" id="curtains">
+			<div class="panel-heading"><h2>Curtains, Curtains, Curtains!</h2></div>
 			<div class="panel-body">
 			<video id="sample_video" class="video-js vjs-default-skin img-responsive" controls preload="auto" width="720" height="404" poster="video/poster/bkn.png" data-setup='{"example-option":true}'>
 			<source src="video/sample.mp4" type='video/mp4'/>
@@ -59,12 +64,29 @@
 			</video>
 			</div>
 			</div>
+
+			<div class="panel panel-default tab-pane fade" id="showreel">
+			<div class="panel-heading"><h1 class="panel-title">The Showreel</h1></div>
+			<div class="panel-body">
+			<video id="sample_video2" class="video-js vjs-default-skin img-responsive" controls preload="auto" width="720" height="404" poster="video/poster/bkn2.png" data-setup='{"example-option":true}'>
+			<source src="video/sample2.mp4" type='video/mp4'/>
+			<p class="vjs-no-js">To view, enable javascript.</p>
+			</video>
+			</div>
+			</div>
+
+
 		</div>
-		<div class="col-sm-4">
-			<h2>More Content</h2>
+
+
+	<div class="col-sm-4">
+			<h3>More Videos</h3>
 			<div class="thumbnail">
-				<img src="img/thumbs/phthumb.png" class="img-responsive">
-				<p class="caption">More videos</p>
+			<div class="row">
+			<a href="#curtains" data-toggle="tab" onclick="show_curtains()"><img src="video/poster/bknthumb.png" class="img-responsive"></a></div>
+			<br>
+			<div class="row">
+			<a href="#showreel" data-toggle="tab"  onclick="show_showreel()"><img src="video/poster/bknthumb2.png" class="img-responsive"></a></div>
 			</div>
 	</div>
 
@@ -79,5 +101,20 @@
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="http://vjs.zencdn.net/4.6/video.js"></script>
+
+    <script type="text/javascript">
+    var curtainsvid=document.getElementById("sample_video");
+    var showreelvid=document.getElementById("sample_video2");
+
+	function show_curtains() {
+		showreelvid.pause();
+	}
+
+	function show_showreel() {
+		curtainsvid.pause();
+	}
+
+	</script>
+
 </body>
 </html>
