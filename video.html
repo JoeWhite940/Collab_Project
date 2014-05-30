@@ -66,7 +66,7 @@
 			</div>
 
 			<div class="panel panel-default tab-pane fade" id="showreel">
-			<div class="panel-heading"><h1 class="panel-title">The Showreel</h1></div>
+			<div class="panel-heading"><h2>The Showreel</h2></div>
 			<div class="panel-body">
 			<video id="sample_video2" class="video-js vjs-default-skin img-responsive" controls preload="auto" width="720" height="404" poster="video/poster/bkn2.png" data-setup='{"example-option":true}'>
 			<source src="video/sample2.mp4" type='video/mp4'/>
@@ -83,10 +83,10 @@
 			<h3>More Videos</h3>
 			<div class="thumbnail">
 			<div class="row">
-			<a href="#curtains" data-toggle="tab" onclick="show_curtains()"><img src="video/poster/bknthumb.png" class="img-responsive"></a></div>
+			<a href="#curtains" data-toggle="tab" onclick="show_curtains()"><img src="video/poster/bknthumb.png" class="img-responsive now-playing" id="curtthumb"></a></div>
 			<br>
 			<div class="row">
-			<a href="#showreel" data-toggle="tab"  onclick="show_showreel()"><img src="video/poster/bknthumb2.png" class="img-responsive"></a></div>
+			<a href="#showreel" data-toggle="tab"  onclick="show_showreel()"><img src="video/poster/bknthumb2.png" class="img-responsive" id="showreelthumb"></a></div>
 			</div>
 	</div>
 
@@ -108,10 +108,14 @@
 
 	function show_curtains() {
 		showreelvid.pause();
+		$("#curtthumb").addClass('now-playing');
+		$("#showreelthumb").removeClass('now-playing');
 	}
 
 	function show_showreel() {
 		curtainsvid.pause();
+		$("#showreelthumb").addClass('now-playing');
+		$("#curtthumb").removeClass('now-playing');
 	}
 
 	</script>

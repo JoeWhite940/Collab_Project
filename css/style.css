@@ -47,3 +47,7 @@ footer {
 	height:100%;
 }
 
+.now-playing {
+	border: 5px solid #73499A;
+	box-shadow: 0px 1px 1px 1px solid black;
+}
