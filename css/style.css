@@ -18,6 +18,8 @@ footer {
 
 .container {
 	margin-top: 1em;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .gallery {
@@ -34,20 +36,22 @@ footer {
 	border: 0px 0px 0px 0px solid #a4a4a4;
 }
 
-.nav-pills>li.active>a{
-	background-color: #5A296E;
-}
-
-.nav-pills>li.active>a:hover{
-	background-color: #B478CE;
+.navbar-right {
+	padding-right: 5em;
 }
 
 .thumbnail {
 	margin-right: 0.5em;
-	height:100%;
+	height:10%;
 }
 
 .now-playing {
 	border: 5px solid #73499A;
 	box-shadow: 0px 1px 1px 1px solid black;
+}
+
+.cycle-slideshow {
+	margin-left:auto;
+	margin-right:auto;
+	width:60%;
 }
