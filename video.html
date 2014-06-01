@@ -6,11 +6,12 @@
     <title>Victoria Hart - Video</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway|Arimo:700' rel='stylesheet' type='text/css'>
 
     <!-- video.js css -->
     <link href="http://vjs.zencdn.net/4.6/video-js.css" rel="stylesheet"> 
     <style type="text/css">
-    	.vjs-default-skin .vjs-play-progress, .vjs-default-skin .vjs-volume-level { background-color: #8e66cc }
+    	.vjs-default-skin .vjs-play-progress, .vjs-default-skin .vjs-volume-level { background-color: #804872 }
     	.vjs-default-skin .vjs-control-bar { font-size: 100% }
     </style>
 
@@ -32,19 +33,20 @@
 				</button>
 			</div>
 			<div class="collapse navbar-collapse" id="collapse">
+				<ul class="nav navbar-nav">
+					<li class="navlogo hidden-xs hidden-sm"><a href="index.html"><img src="img/navlogoph.png"></a></li>
+				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Victoria</a></li>
-					<li class="active"><a href="video.html">Videos</a></li>
-					<li><a href="gallery.html">Photo Gallery</a></li>
-					<li class="socnav"><a href="social.html">Social Media</a></li>
+					<li class="link"><a href="index.html">HOME</a></li>
+					<li class="link"><a href="about.html">ABOUT VICTORIA</a></li>
+					<li class="active"><a href="video.html">VIDEOS</a></li>
+					<li><a href="gallery.html">PHOTO GALLERY</a></li>
+					<li  class="link"><a href="social.html">SOCIAL MEDIA</a></li>
 				</ul>
 			</div>
 		</nav>
 	</div>
 
-	<!-- Banner -->
-	<img src="img/bannerph.png" width="100%">
 
 	<!-- Video -->
 
@@ -81,10 +83,10 @@
 			<h3>More Videos</h3>
 			<div class="thumbnail">
 			<div class="row">
-			<a href="#curtains" data-toggle="tab" onclick="show_curtains()"><img src="video/poster/bknthumb.png" class="img-responsive now-playing" id="curtthumb"></a></div>
+			<a href="#curtains" data-toggle="tab" onclick="show_curtains()" class="vidthumb"><img src="video/poster/bknthumb.png" class="img-responsive now-playing" id="curtthumb"></a></div>
 			<br>
 			<div class="row">
-			<a href="#showreel" data-toggle="tab"  onclick="show_showreel()"><img src="video/poster/bknthumb2.png" class="img-responsive" id="showreelthumb"></a></div>
+			<a href="#showreel" data-toggle="tab"  onclick="show_showreel()"class="vidthumb"><img src="video/poster/bknthumb2.png" class="img-responsive" id="showreelthumb"></a></div>
 			</div>
 	</div>
 

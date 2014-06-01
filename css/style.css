@@ -11,13 +11,8 @@ footer {
 	text-align: center;
 }
 
-.banner {
-	width: 100%;
-	margin-bottom:1em;
-}
-
 .container {
-	margin-top: 1em;
+	margin-top: 2.5em;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -25,11 +20,12 @@ footer {
 /*Overall container for photo gallery thumbs*/
 .gallery {
 	margin: 1em 1em 0em 1em;
-	background-color: #DDDDDD;
+	background-color: #B887AB;
 	width: 95%;
 	margin-left:auto;
 	margin-right:auto;
 	padding-top: 1em;
+	box-shadow: 0px 2px 2px 2px #00000000;
 }
 
 .panel-default {
@@ -39,29 +35,38 @@ footer {
 /*Styling navbar*/
 .navbar-default {
 	min-height: 40px;
-	background-color: #715C83;
+	background-color: #804872;
 	font-color: white;
 	border:none;
-	box-shadow:0px 0px 5px #888888;
+	box-shadow:0px 0px 5px #000000;
 }
 
 /*Styling active navbar button*/
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
+	box-sizing:border-box
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	height:50px;
 	color:white;
-	background-color:#36194e;
-	text-decoration: underline;
+	background-color:#4a113c;
+	text-decoration: none;
+	border-bottom: 5px solid #b879a8;
 }
 
 /*Styling inactive navbar buttons*/
 .navbar-default .navbar-nav > li > a {
     color: white;
+    -webkit-transition:color, 0.3s ease-in;
+	-moz-transition:color, 0.3s ease-in;
+	-o-transition:color, 0.3s ease-in;
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #333;
+.navbar-default .navbar-nav > li.link > a:hover,
+.navbar-default .navbar-nav > li.link > a:focus {
+    color: #181818;
+    background-color: #b879a8;
 }
 
 .navbar-default .navbar-nav > li {
@@ -72,6 +77,20 @@ footer {
 	padding-right: 5em;
 }
 
+.navlogo {
+	margin:0 auto;
+	margin-top:-5px;
+	height:25px;
+}
+
+li {
+	font-family: 'Arimo', sans-serif;
+}
+
+h1, h2, h3, p {
+	font-family: 'Raleway', sans-serif;
+}
+
 .thumbnail {
 	margin-right:0.25em;
 	margin-left:0.25em;
@@ -79,9 +98,10 @@ footer {
 }
 
 /* CSS for active video's thumbnail */
-.now-playing {
-	border: 5px solid #73499A;
-	box-shadow: 0px 1px 1px 1px solid black;
+.img-responsive.now-playing {
+	border: 3px solid #73499A;
+	box-shadow: 0px 6px 6px 6px #242424;
+	opacity: 0.8;
 }
 
 .cycle-slideshow {
@@ -90,16 +110,21 @@ footer {
 }
 
 /* Worked out width on an individual basis to center headers */
+
+.maintitle {
+	font-family: 'Pacifico', cursive;
+}
+
 .maintitle.visible-lg {
-	width: 32%;
+	width: 35%;
 }
 
 .maintitle.visible-md {
-	width:40%;
+	width:43%;
 }
 
 .maintitle.visible-sm {
-	width:53%;
+	width:56%;
 }
 
 .maintitle.visible-xs {
@@ -116,15 +141,31 @@ footer {
 
 .subtitle.visible-lg {
 	margin: 0 auto;
-	width:40%;
+	width:42%;
 }
 
 .subtitle.visible-md {
 	margin: 0 auto;
-	width:49%;
+	width:51%;
 }
 
 .subtitle.visible-sm {
 	margin: 0 auto;
-	width:65%;
+	width:67%;
+}
+
+.thumbnail {
+	background-color: #5a3e53;
+	border:1px solid #5a3e53;
+	box-shadow: 0px 2px 2px 2px #888888;
+}
+
+.thumbnail .caption {
+	color:#f5f5f5;
+	font-size:16pt;
+}
+
+.col-sm-2.thumbnail {
+	border:0px solid #5a3e53;
+	box-shadow: 0px 1px 1px 1px #242424;
 }
