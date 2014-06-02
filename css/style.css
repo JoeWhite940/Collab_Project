@@ -23,6 +23,7 @@ footer {
 	margin: 1em 1em 0em 1em;
 	background-color: #f3f3f3;
 	width: 95%;
+	height: 40em;
 	margin-left:auto;
 	margin-right:auto;
 	padding-top: 1em;
@@ -32,6 +33,7 @@ footer {
 
 .panel-default {
 	padding: 10px;
+	border-radius:2px;
 }
 
 /*Styling navbar*/
@@ -65,9 +67,9 @@ footer {
 /*Styling inactive navbar buttons*/
 .navbar-default .navbar-nav > li > a {
     color: white;
-    -webkit-transition:color, 0.3s ease-in;
-	-moz-transition:color, 0.3s ease-in;
-	-o-transition:color, 0.3s ease-in;
+    -webkit-transition:color, 0.25s ease-in;
+	-moz-transition:color, 0.25s ease-in;
+	-o-transition:color, 0.25s ease-in;
 }
 
 .navbar-default .navbar-nav > li.link > a:hover,
@@ -101,10 +103,23 @@ h1, h2, h3, p {
 /* CSS for video's thumbnail */
 .img-responsive.inactive {
 	opacity: 0.6;
+	border: 1px solid #b879a8;
+	-webkit-transition:opacity, 0.2s ease-in;
+	-moz-transition:opacity, 0.2s ease-in;
+	-o-transition:opacity, 0.s ease-in;
+	-webkit-transition:border, 0.2s ease-in;
+	-moz-transition:border, 0.2s ease-in;
+	-o-transition:border, 0.2s ease-in;
+}
+
+.img-responsive.inactive:hover,
+.img-responsive.inactive:focus {
+	opacity:0.8;
+	border: 2px solid #b879a8;
 }
 
 .img-responsive.now-playing {
-	border: 3px solid #73499A;
+	border: 3px solid #4a113c;
 	box-shadow: 0px 2px 2px 2px #888888;
 	opacity: 1.0;
 }
@@ -179,6 +194,38 @@ ul.slides{
 	border-radius:2px;
 	box-shadow: 0px 1px 1px 1px #888888;
 }
+
+.thumbnail.vidthumbs{
+	height:100%;
+	margin-right:0.4em;
+	margin-left:0.4em;
+	background-color: #e2cde2;
+	border:1px solid #e2cde2;
+	border-radius:2px;
+	box-shadow: 0px 1px 1px 1px #888888;
+
+}
+
+.col-sm-2.thumbnail {
+	-webkit-transition:color, 0.2s ease-in;
+	-moz-transition:color, 0.2s ease-in;
+	-o-transition:color, 0.2s ease-in;
+	-webkit-transition:height, 0.2s ease-in;
+	-moz-transition:height, 0.2s ease-in;
+	-o-transition:height, 0.2s ease-in;
+	-webkit-transition:width, 0.2s ease-in;
+	-moz-transition:width, 0.2s ease-in;
+	-o-transition:width, 0.2s ease-in;
+
+}
+.col-sm-2.thumbnail:hover,
+.col-sm-2.thumbnail:focus {
+    background-color: #b879a8;
+    height:11%;
+    width:17%;
+    border: 1px solid #b879a8;
+}
+
 
 .thumbnail .caption {
 	color:#181818;

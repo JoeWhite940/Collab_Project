@@ -34,12 +34,12 @@
 			</div>
 			<div class="collapse navbar-collapse" id="collapse">
 				<ul class="nav navbar-nav">
-					<li class="navlogo hidden-xs hidden-sm"><a href="index.html"><img src="img/navlogoph.png"></a></li>
+					<li class="navlogo hidden-xs hidden-sm"><a href="index.html"><img src="img/logo/logo-banner.png"></a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="link"><a href="index.html">HOME</a></li>
 					<li class="link"><a href="about.html">ABOUT VICTORIA</a></li>
-					<li class="active"><a href="video.html">VIDEOS</a></li>
+					<li class="active"><a href="video.html">PORTFOLIO</a></li>
 					<li class="link"><a href="gallery.html">PHOTO GALLERY</a></li>
 					<li class="link"><a href="social.html">SOCIAL MEDIA</a></li>
 				</ul>
@@ -58,35 +58,71 @@
 			<div class="panel panel-default tab-pane fade active in" id="curtains">
 			<div class="panel-heading"><h2>Curtains, Curtains, Curtains!</h2></div>
 			<div class="panel-body">
-			<video id="sample_video" class="video-js vjs-default-skin img-responsive" controls preload="auto" width="720" height="404" poster="video/poster/bkn.png" data-setup='{"example-option":true}'>
-			<source src="video/sample.mp4" type='video/mp4'/>
+			<video id="video1" class="video-js vjs-default-skin img-responsive" controls preload="auto" width="720" height="404" poster="video/poster/curtains.jpg" data-setup='{"example-option":true}'>
+			<source src="video/curtains.mp4" type='video/mp4'/>
 			<p class="vjs-no-js">To view, enable javascript.</p>
 			</video>
+			<br><br>
+			<p>The latest episode of Curtains, Curtains, Curtains! In this episode, I take a lovely couple - Jake and Alex - through an exploration of household accessories that will change these connoisseur's outlooks on life forever! Watch to find out which piece they picked from our selection...</p>
 			</div>
 			</div>
 
 			<div class="panel panel-default tab-pane fade" id="showreel">
 			<div class="panel-heading"><h2>The Showreel</h2></div>
 			<div class="panel-body">
-			<video id="sample_video2" class="video-js vjs-default-skin img-responsive" controls preload="auto" width="720" height="404" poster="video/poster/bkn2.png" data-setup='{"example-option":true}'>
-			<source src="video/sample2.mp4" type='video/mp4'/>
+			<video id="video2" class="video-js vjs-default-skin img-responsive" controls preload="auto" width="720" height="404" poster="video/poster/showreel.jpg" data-setup='{"example-option":true}'>
+			<source src="video/showreel.mp4" type='video/mp4'/>
 			<p class="vjs-no-js">To view, enable javascript.</p>
 			</video>
+			<br><br>
+			<p>The showreel of a lifetime... all of my greatest moments, of which there were too many to count, narrowed into this showreel. Whether you're looking for your next star actor, or simply a fan with a keen eye for fantastic acting, this is not worth missing at all!</p>
 			</div>
 			</div>
+
+			<div class="panel panel-default tab-pane fade" id="advert">
+			<div class="panel-heading"><h2>Radio Advert - Curtains, Curtains, Curtains!</h2></div>
+			<div class="panel-body">
+			<video id="video3" class="video-js vjs-default-skin img-responsive" controls preload="auto" width="720" height="404" poster="video/poster/curtains.jpg" data-setup='{"example-option":true}'>
+			<source src="video/advert.mp4" type='video/mp4'/>
+			<p class="vjs-no-js">To view, enable javascript.</p>
+			</video>
+			<br><br>
+			<p>My talent is not limited to the screen! Most definately not. The latest advertisement for Curtains, Curtains, Curtains could not be delivered by anyone other than yours truly. What on earth were marketing thinking trying to have someone else talk about my show on the radio?</p>
+			</div>
+			</div>
+
+			<div class="panel panel-default tab-pane fade" id="interview">
+			<div class="panel-heading"><h2>Radio interview with Emilia Wilding</h2></div>
+			<div class="panel-body">
+			<video id="video4" class="video-js vjs-default-skin img-responsive" controls preload="auto" width="720" height="404" poster="video/poster/curtains.jpg" data-setup='{"example-option":true}'>
+			<source src="video/interview.mp4" type='video/mp4'/>
+			<p class="vjs-no-js">To view, enable javascript.</p>
+			</video>
+			<br><br>
+			<p>Performing is not for everyone. Many try, and many fail. Then some people stick around after failing simply refusing to try their hand at another field. Such as Emilia Wilding, the adorable lady who interviewed me on In Tune radio as shown here. Good effort, Emilia. Just don't get your hopes up.</p>
+			</div>
+			</div>
+
 
 
 		</div>
 
 
 	<div class="col-sm-4">
-			<h3>More Videos</h3>
-			<div class="thumbnail">
+			<h3>More Content <span class="glyphicon glyphicon-play"></span></h3>
+			<div class="thumbnail vidthumbs">
 			<div class="row">
-			<a href="#curtains" data-toggle="tab" onclick="show_curtains()" class="vidthumb"><img src="video/poster/bknthumb.png" class="img-responsive now-playing" id="curtthumb"></a></div>
+			<a href="#curtains" data-toggle="tab" onclick="show_curtains()" class="vidthumb"><img src="video/poster/curtainsthumb.jpg" class="img-responsive now-playing" id="curtthumb"></a></div>
 			<br>
 			<div class="row">
-			<a href="#showreel" data-toggle="tab"  onclick="show_showreel()"class="vidthumb"><img src="video/poster/bknthumb2.png" class="img-responsive inactive" id="showreelthumb"></a></div>
+			<a href="#showreel" data-toggle="tab"  onclick="show_showreel()"class="vidthumb"><img src="video/poster/showreelthumb.jpg" class="img-responsive inactive" id="showreelthumb"></a></div>
+			<br>
+			<div class="row">
+			<a href="#advert" data-toggle="tab"  onclick="show_advert()"class="vidthumb"><img src="video/poster/curtainsthumb.jpg" class="img-responsive inactive" id="advertthumb"></a></div>
+			<br>
+			<div class="row">
+			<a href="#interview" data-toggle="tab"  onclick="show_interview()"class="vidthumb"><img src="video/poster/curtainsthumb.jpg" class="img-responsive inactive" id="interviewthumb"></a></div>
+			</div>
 			</div>
 	</div>
 
@@ -101,28 +137,70 @@
 
 <!-- javascript -->
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="http://vjs.zencdn.net/4.6/video.js"></script>
-	<script src="js/respond.js"></script>
+	<script src="js/respond.js" type="text/javascript"></script>
 
     <script type="text/javascript">
-    var curtainsvid=document.getElementById("sample_video");
-    var showreelvid=document.getElementById("sample_video2");
+    var curtainsvid=document.getElementById("video1");
+    var showreelvid=document.getElementById("video2");
+    var advertvid=document.getElementById("video3");
+    var interviewvid=document.getElementById("video4");
 
 	function show_curtains() {
 		showreelvid.pause();
+		advertvid.pause();
+		interviewvid.pause();
 		$("#curtthumb").addClass('now-playing');
 		$("#curtthumb").removeClass('inactive');
 		$("#showreelthumb").removeClass('now-playing');
 		$("#showreelthumb").addClass('inactive');
+		$("#advertthumb").removeClass('now-playing');
+		$("#advertthumb").addClass('inactive');
+		$("#interviewthumb").removeClass('now-playing');
+		$("#interviewthumb").addClass('inactive');
 	}
 
 	function show_showreel() {
 		curtainsvid.pause();
+		advertvid.pause();
+		interviewvid.pause();
 		$("#showreelthumb").addClass('now-playing');
 		$("#showreelthumb").removeClass('inactive');
 		$("#curtthumb").removeClass('now-playing');
 		$("#curtthumb").addClass('inactive');
+		$("#advertthumb").removeClass('now-playing');
+		$("#advertthumb").addClass('inactive');
+		$("#interviewthumb").removeClass('now-playing');
+		$("#interviewthumb").addClass('inactive');
+	}
+
+	function show_advert() {
+		showreelvid.pause();
+		curtainsvid.pause();
+		interviewvid.pause();
+		$("#advertthumb").addClass('now-playing');
+		$("#advertthumb").removeClass('inactive');
+		$("#curtthumb").removeClass('now-playing');
+		$("#curtthumb").addClass('inactive');
+		$("#showreelthumb").removeClass('now-playing');
+		$("#showreelthumb").addClass('inactive');
+		$("#interviewthumb").removeClass('now-playing');
+		$("#interviewthumb").addClass('inactive');
+	}
+
+	function show_interview() {
+		curtainsvid.pause();
+		showreelvid.pause();
+		advertvid.pause();
+		$("#interviewthumb").addClass('now-playing');
+		$("#interviewthumb").removeClass('inactive');
+		$("#curtthumb").removeClass('now-playing');
+		$("#curtthumb").addClass('inactive');
+		$("#advertthumb").removeClass('now-playing');
+		$("#advertthumb").addClass('inactive');
+		$("#showreelthumb").removeClass('now-playing');
+		$("#showreelthumb").addClass('inactive');
 	}
 
 	</script>
