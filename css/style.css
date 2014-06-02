@@ -15,16 +15,18 @@ footer {
 	margin-top: 2.5em;
 	margin-left:auto;
 	margin-right:auto;
+	border-radius:2px;
 }
 
 /*Overall container for photo gallery thumbs*/
-.gallery {
+.gallery{
 	margin: 1em 1em 0em 1em;
-	background-color: #e2d5e2;
+	background-color: #f3f3f3;
 	width: 95%;
 	margin-left:auto;
 	margin-right:auto;
 	padding-top: 1em;
+	padding-left:9%;
 	box-shadow: 0px 2px 2px 2px #888888;
 }
 
@@ -96,7 +98,6 @@ h1, h2, h3, p {
 	font-family: 'Raleway', sans-serif;
 }
 
-
 /* CSS for video's thumbnail */
 .img-responsive.inactive {
 	opacity: 0.6;
@@ -108,15 +109,24 @@ h1, h2, h3, p {
 	opacity: 1.0;
 }
 
-
-
-.cycle-slideshow {
+.row.blueberry.img-responsive {
 	margin: 0 auto;
-	width:650px;
+	width: 628px;
+}
+
+/*must be kept as wide as images displayed with 0 margin/padding */
+ul.slides{
+	width:628px;
+	margin: 0;
+	padding: 0;
+}
+
+.pager li > a {
+	background-color:#e2d5e2;
+	border: 0px solid #e2d5e2;
 }
 
 /* Worked out width on an individual basis to center headers */
-
 .maintitle {
 	font-family: 'Pacifico', cursive;
 }
@@ -161,11 +171,12 @@ h1, h2, h3, p {
 }
 
 .thumbnail {
-	margin-right:0.25em;
-	margin-left:0.25em;
+	margin-right:0.4em;
+	margin-left:0.4em;
 	height:10%;
 	background-color: #e2cde2;
 	border:1px solid #e2cde2;
+	border-radius:2px;
 	box-shadow: 0px 1px 1px 1px #888888;
 }
 
@@ -174,6 +185,8 @@ h1, h2, h3, p {
 	font-size:14pt;
 }
 
-.jumbotron {
+.container .jumbotron {
 	background-color: #e2d5e2;
+	border-radius:2px;
+	box-shadow: 0px 1px 1px 1px #888888;
 }

@@ -6,9 +6,9 @@
     <title>Victoria Hart - Home</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/blueberry.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Raleway|Arimo:700|Pacifico' rel='stylesheet' type='text/css'>
-
 </head>
 
 <body>
@@ -50,8 +50,7 @@
 
 	<div class="jumbotron">
 
-	<div class="row">
-
+		<div class="row">
 		<div class="row">
 			<h1 class="maintitle visible-lg">Victoria Hart</h1>
 			<h1 class="maintitle visible-md">Victoria Hart</h1>
@@ -62,10 +61,29 @@
 			<h2 class="subtitle visible-sm">Actor, Model, Presenter, Jockey.</p>
 		</div>
 
-		<div class="row cycle-slideshow img-responsive">
-		<img src="img/gallery/img1.jpg" class="img-responsive"/>
-		<img src="img/gallery/img2.jpg" class="img-responsive"/>		
+		<div class="row blueberry img-responsive">
+		<ul class="slides">
+			<li>
+				<img src="img/gallery/img1.jpg" class="img-responsive"/>
+			</li>
+			<li>
+				<img src="img/gallery/img2.jpg" class="img-responsive"/>
+			</li>
+			<li>
+				<img src="img/gallery/img1.jpg" class="img-responsive"/>
+			</li>
+			<li>
+				<img src="img/gallery/img2.jpg" class="img-responsive"/>
+			</li>
+			<li>
+				<img src="img/gallery/img1.jpg" class="img-responsive"/>
+			</li>
+			<li>
+				<img src="img/gallery/img2.jpg" class="img-responsive"/>
+			</li>
+			</ul>		
 		</div>
+	</div>
 	</div>
 
 	</div>
@@ -80,8 +98,14 @@
 <!-- javascript -->
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="http://malsup.github.com/jquery.cycle2.js"></script>
 	<script src="js/respond.js"></script>
+	<script src="js/jquery.blueberry.js"></script>
+
+	<script>
+	$(window).load(function() {
+		$('.blueberry').blueberry();
+	});
+	</script>
 
 </body>
 </html>
