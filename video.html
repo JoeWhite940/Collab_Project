@@ -79,11 +79,11 @@
 			</div>
 			</div>
 
-			<div class="panel panel-default tab-pane fade" id="advert">
+			<div class="panel panel-default tab-pane fade" id="radio">
 			<div class="panel-heading"><h2>Radio Advert - Curtains, Curtains, Curtains!</h2></div>
 			<div class="panel-body">
 			<video id="video3" class="video-js vjs-default-skin img-responsive" controls preload="auto" width="720" height="404" poster="video/poster/curtains.jpg" data-setup='{"example-option":true}'>
-			<source src="video/advert.mp4" type='video/mp4'/>
+			<source src="video/radio.mp4" type='video/mp4'/>
 			<p class="vjs-no-js">To view, enable javascript.</p>
 			</video>
 			<br>
@@ -118,7 +118,7 @@
 			<a href="#showreel" data-toggle="tab"  onclick="show_showreel()"class="vidthumb"><img src="video/poster/showreelthumb.jpg" class="img-responsive inactive" id="showreelthumb"></a></div>
 			<br>
 			<div class="row">
-			<a href="#advert" data-toggle="tab"  onclick="show_advert()"class="vidthumb"><img src="video/poster/curtainsthumb.jpg" class="img-responsive inactive" id="advertthumb"></a></div>
+			<a href="#radio" data-toggle="tab"  onclick="show_radio()"class="vidthumb"><img src="video/poster/curtainsthumb.jpg" class="img-responsive inactive" id="radiothumb"></a></div>
 			<br>
 			<div class="row">
 			<a href="#interview" data-toggle="tab"  onclick="show_interview()"class="vidthumb"><img src="video/poster/curtainsthumb.jpg" class="img-responsive inactive" id="interviewthumb"></a></div>
@@ -144,43 +144,43 @@
     <script type="text/javascript">
     var curtainsvid=document.getElementById("video1");
     var showreelvid=document.getElementById("video2");
-    var advertvid=document.getElementById("video3");
+    var radiovid=document.getElementById("video3");
     var interviewvid=document.getElementById("video4");
 
 	function show_curtains() {
 		showreelvid.pause();
-		advertvid.pause();
+		radiovid.pause();
 		interviewvid.pause();
 		$("#curtthumb").addClass('now-playing');
 		$("#curtthumb").removeClass('inactive');
 		$("#showreelthumb").removeClass('now-playing');
 		$("#showreelthumb").addClass('inactive');
-		$("#advertthumb").removeClass('now-playing');
-		$("#advertthumb").addClass('inactive');
+		$("#radiothumb").removeClass('now-playing');
+		$("#radiothumb").addClass('inactive');
 		$("#interviewthumb").removeClass('now-playing');
 		$("#interviewthumb").addClass('inactive');
 	}
 
 	function show_showreel() {
 		curtainsvid.pause();
-		advertvid.pause();
+		radiovid.pause();
 		interviewvid.pause();
 		$("#showreelthumb").addClass('now-playing');
 		$("#showreelthumb").removeClass('inactive');
 		$("#curtthumb").removeClass('now-playing');
 		$("#curtthumb").addClass('inactive');
-		$("#advertthumb").removeClass('now-playing');
-		$("#advertthumb").addClass('inactive');
+		$("#radiothumb").removeClass('now-playing');
+		$("#radiothumb").addClass('inactive');
 		$("#interviewthumb").removeClass('now-playing');
 		$("#interviewthumb").addClass('inactive');
 	}
 
-	function show_advert() {
+	function show_radio() {
 		showreelvid.pause();
 		curtainsvid.pause();
 		interviewvid.pause();
-		$("#advertthumb").addClass('now-playing');
-		$("#advertthumb").removeClass('inactive');
+		$("#radiothumb").addClass('now-playing');
+		$("#radiothumb").removeClass('inactive');
 		$("#curtthumb").removeClass('now-playing');
 		$("#curtthumb").addClass('inactive');
 		$("#showreelthumb").removeClass('now-playing');
@@ -192,13 +192,13 @@
 	function show_interview() {
 		curtainsvid.pause();
 		showreelvid.pause();
-		advertvid.pause();
+		radiovid.pause();
 		$("#interviewthumb").addClass('now-playing');
 		$("#interviewthumb").removeClass('inactive');
 		$("#curtthumb").removeClass('now-playing');
 		$("#curtthumb").addClass('inactive');
-		$("#advertthumb").removeClass('now-playing');
-		$("#advertthumb").addClass('inactive');
+		$("#radiothumb").removeClass('now-playing');
+		$("#radiothumb").addClass('inactive');
 		$("#showreelthumb").removeClass('now-playing');
 		$("#showreelthumb").addClass('inactive');
 	}
