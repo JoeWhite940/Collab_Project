@@ -40,8 +40,16 @@
 					<li class="link"><a href="index.html">HOME</a></li>
 					<li class="link"><a href="about.html">ABOUT VICTORIA</a></li>
 					<li class="active"><a href="video.html">PORTFOLIO</a></li>
-					<li class="link"><a href="gallery.html">PHOTO GALLERY</a></li>
-					<li class="link"><a href="social.html">SOCIAL MEDIA</a></li>
+					<li class="link"><a href="gallery.html">GALLERY</a></li>
+					<li class="link"><a href="social.html">CONTACT</a></li>
+					<li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown">SOCIAL MEDIA <b class="caret"></b></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="http://facebook.com" target="_blank"><p><img src="img/fb.png"> Facebook</p></a></li>
+				            <li><a href="https://twitter.com/Victoria_Hart88" target="_blank"><p><img src="img/twt.jpg"> Twitter</p></a></li>
+				            <li><a href="http://instagram.com/sexyvickyxoxo88" target="_blank"><p><img src="img/insta.png"> Instagram</p></a></li>
+				          </ul>
+        			</li>
 				</ul>
 			</div>
 		</nav>
@@ -60,6 +68,7 @@
 			<div class="panel-body">
 			<video id="video1" class="video-js vjs-default-skin img-responsive" controls preload="auto" width="720" height="404" poster="video/poster/curtains.jpg" data-setup='{"example-option":true}'>
 			<source src="video/curtains.mp4" type='video/mp4'/>
+			<source src="video/curtains.webm" type='video/webm'/>
 			<p class="vjs-no-js">To view, enable javascript.</p>
 			</video>
 			<br>
@@ -72,29 +81,30 @@
 			<div class="panel-body">
 			<video id="video2" class="video-js vjs-default-skin img-responsive" controls preload="auto" width="720" height="404" poster="video/poster/showreel.jpg" data-setup='{"example-option":true}'>
 			<source src="video/showreel.mp4" type='video/mp4'/>
+			<source src="video/showreel.webm" type='video/webm'/>
 			<p class="vjs-no-js">To view, enable javascript.</p>
 			</video>
 			<br>
-			<p class="vidcap">The showreel of a lifetime... all of my greatest moments, of which there were too many to count, narrowed into this showreel. Whether you're looking for your next star actor, or simply a fan with a keen eye for fantastic acting, this is not worth missing at all!</p>
+			<p class="vidcap">The showreel of a lifetime... all of my greatest moments, of which there are too many to count, narrowed into this showreel. Whether you're looking for your next star actor, or simply a fan with a keen eye for fantastic acting, this is not worth missing at all!</p>
 			</div>
 			</div>
 
 			<div class="panel panel-default tab-pane fade" id="radio">
 			<div class="panel-heading"><h2>Radio Advert - Curtains, Curtains, Curtains!</h2></div>
 			<div class="panel-body">
-			<video id="video3" class="video-js vjs-default-skin img-responsive" controls preload="auto" width="720" height="404" poster="video/poster/curtains.jpg" data-setup='{"example-option":true}'>
+			<video id="video3" class="video-js vjs-default-skin img-responsive" controls preload="auto" width="720" height="404" poster="video/poster/radio.jpg" data-setup='{"example-option":true}'>
 			<source src="video/radio.mp4" type='video/mp4'/>
 			<p class="vjs-no-js">To view, enable javascript.</p>
 			</video>
 			<br>
-			<p class="vidcap">My talent is not limited to the screen! Most definately not. The latest advertisement for Curtains, Curtains, Curtains could not be delivered by anyone other than yours truly. What on earth were marketing thinking trying to have someone else talk about my show on the radio?</p>
+			<p class="vidcap">My talent is not limited to the screen! Most definitely not. The latest advertisement for Curtains, Curtains, Curtains could not be delivered by anyone other than yours truly. What on earth were marketing thinking trying to have someone else talk about my show on the radio?</p>
 			</div>
 			</div>
 
 			<div class="panel panel-default tab-pane fade" id="interview">
 			<div class="panel-heading"><h2>Radio interview with Emilia Wilding</h2></div>
 			<div class="panel-body">
-			<video id="video4" class="video-js vjs-default-skin img-responsive" controls preload="auto" width="720" height="404" poster="video/poster/curtains.jpg" data-setup='{"example-option":true}'>
+			<video id="video4" class="video-js vjs-default-skin img-responsive" controls preload="auto" width="720" height="404" poster="video/poster/interview.jpg" data-setup='{"example-option":true}'>
 			<source src="video/interview.mp4" type='video/mp4'/>
 			<p class="vjs-no-js">To view, enable javascript.</p>
 			</video>
@@ -118,10 +128,10 @@
 			<a href="#showreel" data-toggle="tab"  onclick="show_showreel()"class="vidthumb"><img src="video/poster/showreelthumb.jpg" class="img-responsive inactive" id="showreelthumb"></a></div>
 			<br>
 			<div class="row">
-			<a href="#radio" data-toggle="tab"  onclick="show_radio()"class="vidthumb"><img src="video/poster/curtainsthumb.jpg" class="img-responsive inactive" id="radiothumb"></a></div>
+			<a href="#radio" data-toggle="tab"  onclick="show_radio()"class="vidthumb"><img src="video/poster/radiothumb.jpg" class="img-responsive inactive" id="radiothumb"></a></div>
 			<br>
 			<div class="row">
-			<a href="#interview" data-toggle="tab"  onclick="show_interview()"class="vidthumb"><img src="video/poster/curtainsthumb.jpg" class="img-responsive inactive" id="interviewthumb"></a></div>
+			<a href="#interview" data-toggle="tab"  onclick="show_interview()"class="vidthumb"><img src="video/poster/interviewthumb.jpg" class="img-responsive inactive" id="interviewthumb"></a></div>
 			</div>
 			</div>
 	</div>
@@ -131,6 +141,7 @@
 	<!-- Footer -->
 	<footer class="row">
 		<p><small>Victoria Hart is a fictional character created by students at Bournemouth University.</small></p>
+		<p><small><a href="docs/">Project Documentation</a></small></p>
 	</footer>
 
 </div>

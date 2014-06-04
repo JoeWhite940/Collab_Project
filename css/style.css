@@ -43,6 +43,7 @@ footer {
 	box-shadow: 0px 1px 1px 1px #888888;
 	background-color: #f3f3f3;
 	width:95%;
+	margin-left:17px;
 }
 
 .panel-default {
@@ -62,6 +63,10 @@ footer {
 	font-color: white;
 	border:none;
 	box-shadow:0px 0px 5px #000000;
+}
+
+.dropdown-menu {
+	background-color: #e2d5e2;
 }
 
 /*Styling active navbar button*/
@@ -90,6 +95,22 @@ footer {
 .navbar-default .navbar-nav > li.link > a:focus {
     color: #181818;
     background-color: #b879a8;
+}
+
+.navbar-default .navbar-nav > li.dropdown >a:hover {
+    color: #181818;
+    background-color: #b879a8;
+}
+
+.navbar-default .navbar-nav > li.dropdown >a:focus {
+	box-sizing:border-box
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	height:50px;
+	color:white;
+	background-color:#4a113c;
+	text-decoration: none;
+	border-bottom: 5px solid #b879a8;
 }
 
 .navbar-default .navbar-nav > li {
@@ -202,12 +223,12 @@ ul.slides{
 
 .subtitle.visible-md {
 	margin: 0 auto;
-	width:51%;
+	width:52%;
 }
 
 .subtitle.visible-sm {
 	margin: 0 auto;
-	width:67%;
+	width:69%;
 }
 
 .thumbnail {
